@@ -32,6 +32,17 @@ jobs:
           mkdir -p /tmp/base-beyond-production
           cp -R dist/. /tmp/base-beyond-production/
           cp .htaccess /tmp/base-beyond-production/.htaccess
+          cat > /tmp/base-beyond-production/.cpanel.yml <<'EOF'
+          ---
+          deployment:
+            tasks:
+              - export DEPLOYPATH=$HOME/public_html/BaseBeyond/
+              - /bin/mkdir -p $DEPLOYPATH
+              - /bin/cp index.html $DEPLOYPATH
+              - /bin/cp .htaccess $DEPLOYPATH
+              - /bin/rm -rf $DEPLOYPATH/assets
+              - /bin/cp -R assets $DEPLOYPATH
+          EOF
           cd /tmp/base-beyond-production
           git init
           git checkout -b production
