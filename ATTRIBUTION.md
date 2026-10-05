@@ -1,12 +1,14 @@
-# Attribution
+# Technology & Attribution
 
-Base & Beyond is an original implementation inspired by modern open-source interaction and motion ecosystems including Animata, Skiper UI and Vengeance UI.
+Base & Beyond is an original implementation.
 
-Core runtime libraries:
+Core technologies used in the project:
 - React
-- Three.js / React Three Fiber / Drei
+- Three.js / React Three Fiber
 - GSAP / ScrollTrigger
 - Motion
 - Lenis
+- Vite
+- WebGL
 
-No paid component source is redistributed in this repository.
+Project design, layout and interaction composition are custom-built for Base & Beyond.
