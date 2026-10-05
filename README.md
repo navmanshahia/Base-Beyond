@@ -32,4 +32,4 @@ Then publish/copy the contents of `dist/` into the domain's document root.
 
 React, Vite, Three.js / React Three Fiber, Drei, GSAP ScrollTrigger, Motion and Lenis.
 
-The visual interaction language is custom-built, with inspiration from open-source component ecosystems such as Animata, Skiper UI and Vengeance UI.
+The visual interaction language is custom-built using established web technologies including React, Three.js, GSAP, WebGL, Vite and Lenis.
