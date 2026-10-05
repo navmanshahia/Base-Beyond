@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: base-beyond-cpanel-production
+  cancel-in-progress: true
+
 jobs:
   build-production:
     if: github.actor != 'github-actions[bot]'
